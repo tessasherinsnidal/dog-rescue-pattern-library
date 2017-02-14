@@ -1,0 +1,46 @@
+:root {
+  --color-primary: #8B8AAA;
+  --color-secondary: #F59799;
+  --color-accent: #CDE7CE;
+  --color-background: #FDFDFD;
+  --color-banner: #fff;
+  --btn-background: #CDE7CE;
+  --btn-color: #8B8AAA;
+  --btn-radius: #fff;
+
+  --font-primary: "Roboto", Arial;
+}
+
+html {
+  font-family: var(--font-primary);
+}
+
+h1 {
+  color: var(--color-primary);
+}
+
+h2 {
+  color: var(--color-primary);
+}
+
+h3 {
+  color: var(--color-primary);
+}
+
+<em>, <strong> {
+  color: var(--color-primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: #fff;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+ul {
+  list-style-type: none;
+}
