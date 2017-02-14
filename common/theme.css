@@ -1,20 +1,21 @@
 :root {
-  --color-primary: #8B8AAA;
-  --color-secondary: #F59799;
-  --color-accent: #CDE7CE;
-  --color-background: #FDFDFD;
+  --color-primary: #8b8aaa;
+  --color-secondary: #f59799;
+  --color-accent: #cde7ce;
+  --color-background: #fdfdfd;
   --color-banner: #fff;
-  --btn-background: #CDE7CE;
-  --btn-color: #8B8AAA;
+  --btn-background: #cde7ce;
+  --btn-color: #8b8aaa;
   --btn-radius: #fff;
 
-  --font-primary: "Roboto", Arial;
+  --font-primary: "Roboto", arial;
   --font-weight: 300;
 }
 
 html {
   font-family: var(--font-primary);
   font-weight: var(--font-weight);
+  background-color: #fdfdfd;
 }
 
 h1 {
@@ -37,7 +38,7 @@ h4, h5, h6 {
   font-weight: var(--font-weight);
 }
 
-<em>, <strong> {
+em, strong {
   color: var(--color-primary);
 }
 
