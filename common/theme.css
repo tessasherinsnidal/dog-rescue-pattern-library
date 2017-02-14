@@ -9,22 +9,32 @@
   --btn-radius: #fff;
 
   --font-primary: "Roboto", Arial;
+  --font-weight: 300;
 }
 
 html {
   font-family: var(--font-primary);
+  font-weight: var(--font-weight);
 }
 
 h1 {
   color: var(--color-primary);
+  font-weight: var(--font-weight);
 }
 
 h2 {
   color: var(--color-primary);
+  font-weight: var(--font-weight);
 }
 
 h3 {
   color: var(--color-primary);
+  font-weight: var(--font-weight);
+}
+
+h4, h5, h6 {
+  color: var(--color-secondary);
+  font-weight: var(--font-weight);
 }
 
 <em>, <strong> {
@@ -41,6 +51,10 @@ a:hover {
   border-bottom: 2px solid var(--color-primary);
 }
 
-ul {
+ul, li {
   list-style-type: none;
+}
+
+header {
+  background-color: var(--color-accent);
 }
