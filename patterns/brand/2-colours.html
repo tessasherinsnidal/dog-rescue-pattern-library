@@ -11,20 +11,23 @@
   <link href="common.min.css" rel="stylesheet">
   <link href="brand.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,300i,400,400i,500,500i" rel="stylesheet">
 </head>
 <body>
 
   <div class="patternbot-font-primary text-left">
 
     <section>
-      <h2 class="patternbot-color-body giga ">Primary colours</h2>
+      <h2 class="patternbot-color-body giga push-1-4">Primary colours</h2>
+        <div class="patternbot-max-length italic max-length">
+          <p>The primary colour is a calming purple/blue that calms the page and gives the page a trusting feel. Use them for h1-3, footers and emphasis.</p>
+
+        </div>
 
       <div class="patternbot-color-swatches patternbot-color-swatches-primary grid grid-stretch">
         <div class="unit xs-1-2" style="background-color:var(--color-primary)">&nbsp;</div>
         <div class="patternbot-color-swatches-fill unit xs-1-2" style="background-color:var(--color-primary)">
             <div style="background-color:var(--color-primary);">&nbsp;</div>
-            <div style="background-color:var(--color-primary-light);">&nbsp;</div>
         </div>
       </div>
 
@@ -36,19 +39,8 @@
             </div>
             <ul class="patternbot-code-details patternbot-code-details-under list-group micro push-0">
               <li class="push-1-8"><code>var(--color-primary)</code></li>
-              <li class="push-1-8"><code>false</code></li>
-              <li><code>false</code></li>
-            </ul>
-          </li>
-          <li class="push-r-1-2">
-            <div class="push-1-2">
-              <i class="icon i-24" style="background-color:var(--color-primary-light);">&nbsp;</i>
-              <span class="icon-label">Primary light</span>
-            </div>
-            <ul class="patternbot-code-details patternbot-code-details-under list-group micro push-0">
-              <li class="push-1-8"><code>var(--color-primary-light)</code></li>
-              <li class="push-1-8"><code>false</code></li>
-              <li><code>false</code></li>
+              <li class="push-1-8"><code>#8b8aaa</code></li>
+              <li><code>rgba(139, 138, 170, 1)</code></li>
             </ul>
           </li>
       </ul>
@@ -57,7 +49,11 @@
     <section class="pad-t">
       <hr class="patternbot-hr">
 
-      <h2 class="patternbot-color-body giga ">Secondary colours</h2>
+      <h2 class="patternbot-color-body giga push-1-4">Secondary colours</h2>
+        <div class="patternbot-max-length italic max-length">
+          <p>The secondary colour brings a pop of bright to the page so it doesn&#39;t all wash out. Use them for the cards and footer background and for h4-6.</p>
+
+        </div>
 
       <div class="patternbot-color-swatches patternbot-color-swatches-secondary grid grid-stretch">
         <div class="unit xs-1-2" style="background-color:var(--color-secondary)">&nbsp;</div>
@@ -74,8 +70,8 @@
             </div>
             <ul class="patternbot-code-details patternbot-code-details-under list-group micro push-0">
               <li class="push-1-8"><code>var(--color-secondary)</code></li>
-              <li class="push-1-8"><code>false</code></li>
-              <li><code>false</code></li>
+              <li class="push-1-8"><code>#f59799</code></li>
+              <li><code>rgba(245, 151, 153, 1)</code></li>
             </ul>
           </li>
       </ul>
@@ -84,7 +80,11 @@
     <section class="pad-t">
       <hr class="patternbot-hr">
 
-      <h2 class="patternbot-color-body giga ">Accent colours</h2>
+      <h2 class="patternbot-color-body giga push-1-4">Accent colours</h2>
+        <div class="patternbot-max-length italic max-length">
+          <p>The accent colour represents a nature based colour to bring another calming and trusting feel to the website. Use them for the header and button backgrounds.</p>
+
+        </div>
       <ul class="patterbot-color-swatch-labels patternbot-color-body list-group-inline milli push-0">
           <li class="push-r-1-2 push">
             <div class="patternbot-color-swatches patternbot-color-swatches-accent push-1-2" style="background-color:var(--color-accent);">&nbsp;</div>
@@ -94,13 +94,60 @@
             </div>
             <ul class="patternbot-code-details patternbot-code-details-under list-group micro push-0">
               <li class="push-1-8"><code>var(--color-accent)</code></li>
-              <li class="push-1-8"><code>false</code></li>
-              <li><code>false</code></li>
+              <li class="push-1-8"><code>#cde7ce</code></li>
+              <li><code>rgba(205, 231, 206, 1)</code></li>
+            </ul>
+          </li>
+          <li class="push-r-1-2 push">
+            <div class="patternbot-color-swatches patternbot-color-swatches-accent push-1-2" style="background-color:var(--color-background);">&nbsp;</div>
+            <div class="push-1-2">
+              <i class="icon i-24" style="background-color:var(--color-background);">&nbsp;</i>
+              <span class="icon-label">Background</span>
+            </div>
+            <ul class="patternbot-code-details patternbot-code-details-under list-group micro push-0">
+              <li class="push-1-8"><code>var(--color-background)</code></li>
+              <li class="push-1-8"><code>#fdfdfd</code></li>
+              <li><code>rgba(253, 253, 253, 1)</code></li>
+            </ul>
+          </li>
+          <li class="push-r-1-2 push">
+            <div class="patternbot-color-swatches patternbot-color-swatches-accent push-1-2" style="background-color:var(--color-banner);">&nbsp;</div>
+            <div class="push-1-2">
+              <i class="icon i-24" style="background-color:var(--color-banner);">&nbsp;</i>
+              <span class="icon-label">Banner</span>
+            </div>
+            <ul class="patternbot-code-details patternbot-code-details-under list-group micro push-0">
+              <li class="push-1-8"><code>var(--color-banner)</code></li>
+              <li class="push-1-8"><code>#fff</code></li>
+              <li><code>rgba(255, 255, 255, 1)</code></li>
             </ul>
           </li>
       </ul>
     </section>
 
+    <section class="pad-t">
+      <hr class="patternbot-hr">
+
+      <h2 class="patternbot-color-body giga push-1-4">Neutral colours</h2>
+        <div class="patternbot-max-length italic max-length">
+          <p>The neutral colour makes it so the dark-black of the usual text isn&#39;t too bold and harsh and blends more with the branding of the company. Use them for the body copy and captions.</p>
+
+        </div>
+      <ul class="patterbot-color-swatch-labels patternbot-color-body list-group-inline milli push-0">
+          <li class="push-r-1-2 push">
+            <div class="patternbot-color-swatches patternbot-color-swatches-accent push-1-2" style="background-color:var(--color-neutral);">&nbsp;</div>
+            <div class="push-1-2">
+              <i class="icon i-24" style="background-color:var(--color-neutral);">&nbsp;</i>
+              <span class="icon-label">Neutral</span>
+            </div>
+            <ul class="patternbot-code-details patternbot-code-details-under list-group micro push-0">
+              <li class="push-1-8"><code>var(--color-neutral)</code></li>
+              <li class="push-1-8"><code>#333</code></li>
+              <li><code>rgba(51, 51, 51, 1)</code></li>
+            </ul>
+          </li>
+      </ul>
+    </section>
 
 </div>
 

@@ -1,0 +1,36 @@
+.btn {
+  background-color: var(--color-accent);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-light {
+  background-color: #fdfdfd;
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border-color: var(--color-accent);
+  color: var(--color-secondary);
+}
+
+.btn:hover {
+  color: var(--color-accent);
+  background-color: var(--color-primary);
+  border-color: var(--color-accent);
+}
+
+.btn-light:hover {
+  background-color: var(--color-secondary);
+  border-color: #fdfdfd;
+  color: #fdfdfd;
+}
+
+.btn-ghost:hover {
+  color: var(--color-primary);
+  border-color: transparent;
+  text-decoration: underline;
+  background-color: transparent;
+}

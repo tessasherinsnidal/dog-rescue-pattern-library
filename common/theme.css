@@ -3,39 +3,38 @@
   --color-secondary: #f59799;
   --color-accent: #cde7ce;
   --color-background: #fdfdfd;
+  --color-neutral: #333;
   --color-banner: #fff;
-  --btn-background: #cde7ce;
-  --btn-color: #8b8aaa;
-  --btn-radius: #fff;
+  --btn-border: #fff;
 
-  --font-primary: "Roboto", arial;
-  --font-weight: 300;
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Roboto Slab", serif;
 }
 
 html {
   font-family: var(--font-primary);
-  font-weight: var(--font-weight);
-  background-color: #fdfdfd;
+  background-color: var(--color-background);
+  color: var(--color-neutral);
 }
 
 h1 {
   color: var(--color-primary);
-  font-weight: var(--font-weight);
+  font-family: var(--font-secondary);
 }
 
 h2 {
   color: var(--color-primary);
-  font-weight: var(--font-weight);
+  font-family: var(--font-secondary);
 }
 
 h3 {
   color: var(--color-primary);
-  font-weight: var(--font-weight);
+  font-family: var(--font-secondary);
 }
 
 h4, h5, h6 {
   color: var(--color-secondary);
-  font-weight: var(--font-weight);
+  font-family: var(--font-secondary);
 }
 
 em, strong {
@@ -52,8 +51,9 @@ a:hover {
   border-bottom: 2px solid var(--color-primary);
 }
 
-ul, li {
+ul, li, dl, dt, dd {
   list-style-type: none;
+  color: var(--color-secondary);
 }
 
 header {
