@@ -1,0 +1,13 @@
+.banner {
+  color: #fff;
+}
+
+.banner-basic {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .7), rgba(0, 0, 0, .1)), url("http://placehold.it/250x250");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  padding-left: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
