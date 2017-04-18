@@ -1,0 +1,404 @@
+.nav-container,
+.mainnav-link-group {
+  background-color: var(--color-accent);
+}
+
+.mainnav-label,
+.mainnav-link-logo,
+.mainnav-link {
+  cursor: pointer;
+  transition: opacity 200ms ease-in-out;
+
+  color: #fff;
+}
+
+.mainnav-label:hover,
+.mainnav-link-logo:hover,
+.mainnav-link:hover {
+  opacity: .65;
+  text-decoration: none;
+}
+
+.current {
+  opacity: .65;
+  color: var(--color-primary)
+}
+
+.mainnav {
+  display: none;
+}
+
+.mainnav-check:checked ~ .mainnav {
+  display: block;
+}
+
+.mainnav-check {
+  top: -3em;
+}
+
+.mainnav-label {
+  height: 48px;
+  width: 48px;
+}
+
+input[type="checkbox"] + label::before {
+  display: none;
+}
+
+.mainnav-icon {
+  height: 2px;
+  left: 16px;
+  width: 16px;
+
+  background:  var(--color-primary);
+  transition: transform 200ms ease-in-out;
+}
+
+.mainnav-icon-top {
+  top: 23px;
+
+  transform: translateY(-3px);
+}
+
+.mainnav-icon-bottom {
+  bottom: 23px;
+
+  transform: translateY(3px);
+}
+
+.mainnav-check:checked ~ .mainnav-label .mainnav-icon-top {
+  transform: rotate(45deg);
+}
+
+.mainnav-check:checked ~ .mainnav-label .mainnav-icon-bottom {
+  transform: rotate(-45deg);
+}
+
+.logo-wrapper-xs {
+  height: 48px;
+}
+
+.logo-xs {
+  height: 48px;
+  width: 149.4px;
+
+  background-image: url("");
+  background-size: auto 48px;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 46em) {
+
+  input[type="checkbox"] + label {
+    display: none;
+  }
+
+  .mainnav {
+    display: block;
+  }
+
+  .mainnav-link-group {
+    padding: 0 .7rem;
+
+    text-align: right;
+  }
+
+  .mainnav-link {
+    display: inline-block;
+    padding: .7rem;
+  }
+
+  .mainnav-link-border {
+    border: none;
+  }
+
+  .logo-wrapper {
+    height: 49px;
+
+    text-align: left;
+  }
+
+  .logo {
+    height: 49px;
+    width: 165.6px;
+
+    background-image: url("");
+    background-size: auto 49px;
+    background-repeat: no-repeat;
+  }
+
+}
+
+@media only screen and (min-width: 67em) {
+
+  .mainnav-link-group {
+    padding: 0 .75rem;
+  }
+
+  .mainnav-link {
+    padding: .75rem;
+  }
+
+  .logo-wrapper {
+    height: 57px;
+  }
+
+  .logo {
+    height: 57px;
+    width: 192.6px;
+
+    background-size: auto 57px;
+  }
+
+}
+
+/* sub nav */
+
+.subnav-container {
+  padding-top: 3rem;
+
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.subnav-header a {
+  color: var(--color-primary);
+}
+
+.subnav-header a:hover {
+  color: var(--color-primary);
+}
+
+.subnav-link {
+  color: var(--color-primary);
+}
+
+.subnav-link:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.subnav-link-style {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.subnav {
+  display: none;
+}
+
+.subnav-check:checked ~ .subnav {
+  display: block;
+}
+
+.subnav-check {
+  top: -3em;
+}
+
+.subnav-label {
+  width: 52px;
+}
+
+.subnav-icon {
+  height: 2px;
+  left: 20px;
+  top: 30px;
+  width: 12px;
+
+  transition: top 200ms ease-in-out, transform 200ms ease-in-out;
+  background: var(--color-primary);
+}
+
+.subnav-label:hover .subnav-icon {
+  background: var(--color-accent);
+}
+
+.subnav-icon-left {
+  transform: rotate(-40deg) translate(5.24px);
+}
+
+.subnav-icon-right {
+  transform: rotate(40deg) translateX(-5.24px);
+}
+
+.subnav-check:checked ~ .subnav-label .subnav-icon-left {
+  top: 22px;
+
+  transform: rotate(40deg) translate(5.24px);
+}
+
+.subnav-check:checked ~ .subnav-label .subnav-icon-right {
+  top: 22px;
+
+  transform: rotate(-40deg) translateX(-5.24px);
+}
+
+@media only screen and (min-width: 46em) {
+
+  .subnav {
+    display: inline-block;
+  }
+
+  .subnav-wrapper {
+    padding: .7rem 1.4rem;
+  }
+
+  .subnav-link-wrapper {
+    text-align: right;
+  }
+
+  .subnav-link-style {
+    margin-right: 1.4rem;
+
+    border-bottom: 0;
+  }
+
+  .subnav-border {
+    border: none;
+  }
+
+  .subnav-header a,
+  .subnav-link-group,
+  .subnav-link {
+    padding: 0;
+  }
+
+  .subnav-link-group li {
+    display: inline-block;
+  }
+
+  .mainnav-link-right {
+    border-right: 2px solid var(--color-primary);
+    margin: auto;
+  }
+
+}
+
+@media only screen and (min-width: 67em) {
+
+  .subnav-wrapper {
+    padding: .75rem 1.5rem;
+  }
+
+  .subnav-link-style {
+    margin-right: 1.5rem;
+  }
+
+}
+
+/* filter */
+
+.filter-container {
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.filter-select {
+  padding: 0;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'%3E%3Cpath fill='%23888' d='M128 184.1v-.1L255 73.7l-24.1-27.8L128 135.4 25.1 45.9 1 73.7 128 184v.1z'/%3E%3C/svg%3E");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 10px auto;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-select:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'%3E%3Cpath fill='%23ff4081' d='M128 184.1v-.1L255 73.7l-24.1-27.8L128 135.4 25.1 45.9 1 73.7 128 184v.1z'/%3E%3C/svg%3E");
+
+  color: var(--color-accent);
+}
+
+.filter-label,
+.filter-item-label {
+  color: var(--color-primary);
+}
+
+.filter-label:hover {
+  color: var(--color-accent);
+}
+
+.filter-item-border {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.filters {
+  display: none;
+}
+
+.filter-check:checked ~ .filters {
+  display: block;
+}
+
+.filter-check {
+  top: -3em;
+}
+
+@media only screen and (min-width: 46em) {
+
+  .filters {
+    display: block;
+    padding: .7rem 0;
+  }
+
+  .filter-item {
+    padding: 0 1.4rem;
+  }
+
+  .filter-item-border {
+    border-bottom: 0;
+
+  }
+
+}
+
+@media only screen and (min-width: 67em) {
+
+  .filters {
+    padding: .75rem 0;
+  }
+
+  .filter-item {
+    padding: 0 1.5rem;
+  }
+
+}
+
+/* tab nav */
+
+.tabnav-btn {
+  color: var(--color-primary);
+}
+
+#agreement-control:checked ~ .tabnav-controls [for="agreement-control"],
+#about-control:checked ~ .tabnav-controls [for="about-control"],
+#lifestyle-control:checked ~ .tabnav-controls [for="lifestyle-control"],
+#petinfo-control:checked ~ .tabnav-controls [for="petinfo-control"],
+#other-control:checked ~ .tabnav-controls [for="other-control"] {
+  border-bottom: 1px solid var(--color-neutral-dark);
+
+  color: var(--color-neutral-dark);
+}
+
+/* breadcrumbs */
+
+.breadcrumbs-logo {
+  color: var(--color-primary);
+}
+
+.breadcrumbs-logo:hover {
+  color: #303f9f;
+}
+
+.i-breadcrumb {
+  height: 16px;
+  width: 7px;
+
+  color: var(--color-neutral-light);
+}
+
+.breadcrumbs-link {
+  color: #555;
+}
+
+.breadcrumbs-link:hover {
+  color: var(--color-neutral-dark);
+}

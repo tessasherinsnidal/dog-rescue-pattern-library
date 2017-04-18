@@ -1,7 +1,7 @@
 :root {
-  --color-primary: #8b8aaa;
+  --color-primary: #333333;
   --color-secondary: #f59799;
-  --color-accent: #cde7ce;
+  --color-accent: #8aaec0;
   --color-background: #fdfdfd;
   --color-neutral: #333;
   --color-banner: #fff;
@@ -47,7 +47,7 @@ a {
 }
 
 a:hover {
-  color: #fff;
+  color: var(--color-primary);
   border-bottom: 2px solid var(--color-primary);
 }
 
@@ -58,4 +58,12 @@ ul, li, dl, dt, dd {
 
 header {
   background-color: var(--color-accent);
+}
+
+p {
+  color: var(--color-primary)
+}
+
+.white {
+  color: #fff;
 }

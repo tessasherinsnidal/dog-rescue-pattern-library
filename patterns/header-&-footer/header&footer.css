@@ -1,0 +1,23 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+header {
+  background-color: var(--color-accent);
+}
+
+footer {
+  background-color: var(--color-accent);
+}
+
+.footer {
+  color: #fff;
+}
+
+.online {
+  float: right;
+}

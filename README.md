@@ -1,4 +1,6 @@
 ---
+outputFile: "index.html"
+
 name: Birch Haven Rescue and Rehabilitation Services
 fontUrl: "https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,300i,400,400i,500,500i"
 fonts:

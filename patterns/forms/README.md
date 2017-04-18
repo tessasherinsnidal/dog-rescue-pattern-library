@@ -5,8 +5,8 @@ date-pickers: |
   Use date picker when the user has to select a date in the application.
 option: |
   Use option when the user has to make a selection between more then one option in a list.
-radial: |
-  Use radial when selecting a yes or no question.
+radio: |
+  Use radio when selecting a yes or no question.
 text-areas: |
   Use text inputs when the user must write a long personalized response to the question.
 text-inputs: |
