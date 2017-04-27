@@ -1,8 +1,6 @@
 ---
 checkboxes: |
   Use checkboxes when the user has to agree before proceeding forward with the submission.
-date-pickers: |
-  Use date picker when the user has to select a date in the application.
 option: |
   Use option when the user has to make a selection between more then one option in a list.
 radio: |

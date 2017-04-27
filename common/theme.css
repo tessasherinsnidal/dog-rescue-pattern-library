@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #333333;
+  --color-primary: #333;
   --color-secondary: #f59799;
   --color-accent: #8aaec0;
   --btn-border: #fff;
@@ -59,7 +59,7 @@ header {
 }
 
 p {
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
 
 .white {

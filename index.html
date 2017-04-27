@@ -859,17 +859,19 @@ width: 250px.</p>
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="cards-basic-card-code-sample-copy-chunk">&lt;li class="unit [ xs-1 s-1-2 m-1-3 ] unit-content-distribute list-group island-1-4"&gt;
-  &lt;a href="#" class="card icon-link block text-left content-fill unit-content-distribute gutter pad-t-2 pad-b-2">
-    &lt;div class="push">
-      &lt;img class="img-flex" src="http://placehold.it/256x256" alt="">
-    &lt;/div>
-    &lt;h2 class="card-title mega push-0">Whisper&lt;/h2>
-    &lt;p class="content-fill push-0">Great Dane&lt;/p>
-    &lt;p class="push-0">Female, Age 3&lt;/p>
+              <code><pre id="cards-basic-card-code-sample-copy-chunk">&lt;ul&gt;
+  &lt;li class="unit [ xs-1 s-1-2 m-1-3 ] unit-content-distribute list-group island-1-4">
+    &lt;a href="#" class="card icon-link block text-left content-fill unit-content-distribute gutter pad-t-2 pad-b-2">
+      &lt;div class="push">
+        &lt;img class="img-flex" src="http://placehold.it/256x256" alt="">
+      &lt;/div>
+      &lt;h2 class="card-title mega push-0">Whisper&lt;/h2>
+      &lt;p class="content-fill push-0">Great Dane&lt;/p>
+      &lt;p class="push-0">Female, Age 3&lt;/p>
+    &lt;/a>
     &lt;a class="btn">Learn more about...&lt;/a>
-  &lt;/a>
-&lt;/li>
+  &lt;/li>
+&lt;/ul>
 </pre></code>
             </div>
           </div>
@@ -946,7 +948,6 @@ width: 250px.</p>
       <nav class="pattern-nav">
         <ol class="list-group-inline push-1-4">
             <li><a href="#forms-checkboxes">Checkboxes</a></li>
-            <li><a href="#forms-date-pickers">Date pickers</a></li>
             <li><a href="#forms-option">Option</a></li>
             <li><a href="#forms-radio">Radio</a></li>
             <li><a href="#forms-text-areas">Text areas</a></li>
@@ -1039,83 +1040,6 @@ width: 250px.</p>
           </div>
       </div>
     </div>
-    <div class="pattern-details" id="forms-date-pickers" style="">
-        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Date pickers</h3>
-            <ul class="list-group-inline gutter absolute pin-cr">
-                <li>
-                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="forms-date-pickers-code-sample">
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-code"></use></svg>
-                    </i>
-                  </button>
-                </li>
-                <li>
-                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/forms/date-pickers.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-pop-out"></use></svg>
-                    </i>
-                  </a>
-                </li>
-            </ul>
-        </div>
-          <div class="pattern-desc milli island" style="">
-            <div class="max-length"><p>Use date picker when the user has to select a date in the application.</p>
-</div>
-          </div>
-
-      <div class="pattern-examples pad-t-1-2 pad-b-1-2">
-        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
-          <div class="resizeable-pattern relative" style="">
-            <iframe data-src="patterns/forms/date-pickers.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
-              <div class="resizeable-pattern-length">
-                <div class="resize-handle resize-handle-left" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-                <div class="resize-handle resize-handle-right" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-              </div>
-          </div>
-        </div>
-
-          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="forms-date-pickers-code-sample" tabindex="-1">
-            <div class="pattern-code relative milli island-1-2" style="">
-              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#forms-date-pickers-code-sample-copy-chunk" hidden>
-                <i class="icon i-18">
-                  <svg><use xlink:href="#icon-copy"></use></svg>
-                </i>
-              </button>
-              <code><pre id="forms-date-pickers-code-sample-copy-chunk">&lt;form class="max-length island" method="post" novalidate=""&gt;
-  &lt;div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
-    &lt;h3 class="push-0">
-        &lt;i class="icon i-32">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-        &lt;span class="icon-label">There are items that require your attention&lt;/span>
-      &lt;/h3>
-  &lt;/div>
-
-  &lt;div class="push-1-2">
-    &lt;label for="date">Date&lt;/label>
-    &lt;input type="text" id="datepicker" required aria-describedby="name-error">
-    &lt;p class="error-message milli island-1-4 push-0" id="name-error">
-      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-      &lt;span class="icon-label">Please provide a name&lt;/span>
-    &lt;/p>
-  &lt;/div>
-
-  &lt;div class="pad-t-1-2">
-    &lt;button class="btn-light" type="submit">Submit&lt;/button>
-  &lt;/div>
-&lt;/form>
-</pre></code>
-            </div>
-          </div>
-      </div>
-    </div>
     <div class="pattern-details" id="forms-option" style="">
         <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
           <h3 class="pattern-name tera push-1-8">Option</h3>
@@ -1176,7 +1100,7 @@ width: 250px.</p>
   &lt;/div>
 
   &lt;div class="push-1-2">
-    &lt;label for="name">Pick an Option&lt;/label>
+    &lt;label>Pick an Option&lt;/label>
     &lt;select id="option" name="option">
       &lt;option>Choose an option&lt;/option>
       &lt;option>Two&lt;/option>
@@ -1259,9 +1183,9 @@ width: 250px.</p>
 
   &lt;div class="push-1-2 pad-t-1-2">
     &lt;input class="radio" name="yes" type="radio" required aria-describedby="agree-error">
-    &lt;label for="yes">Yes&lt;/label>
+    &lt;label>Yes&lt;/label>
     &lt;input class="radio" name="no" type="radio" required aria-describedby="agree-error">
-    &lt;label for="no">No&lt;/label>
+    &lt;label>No&lt;/label>
     &lt;p class="error-message milli island-1-4 push-0" id="agree-error">
       &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icon.svg#error"/>&lt;/svg>&lt;/i>
       &lt;span class="icon-label">You must select either yes or no.&lt;/span>
@@ -1681,7 +1605,7 @@ width: 250px.</p>
                 </i>
               </button>
               <code><pre id="navigation-dog-nav-code-sample-copy-chunk">&lt;a class="dog-nav" href="#"&gt;
-  &lt;img href="#dogsname" src="http://placehold.it/250x250" alt="">
+  &lt;img src="http://placehold.it/250x250" alt="">
 &lt;/a>
 </pre></code>
             </div>
