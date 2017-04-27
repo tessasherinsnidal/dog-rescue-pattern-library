@@ -100,7 +100,7 @@ input[type="checkbox"] + label::before {
   .mainnav-link-group {
     padding: 0 .7rem;
 
-    text-align: right;
+    text-align: center;
   }
 
   .mainnav-link {
@@ -263,11 +263,6 @@ input[type="checkbox"] + label::before {
 
   .subnav-link-group li {
     display: inline-block;
-  }
-
-  .mainnav-link-right {
-    border-right: 2px solid var(--color-primary);
-    margin: auto;
   }
 
 }
