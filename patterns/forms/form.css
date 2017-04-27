@@ -7,7 +7,7 @@ input:checked {
   border-radius: 0;
 }
 
-.checkbox {
+.checkbox-agree {
   color: var(--color-primary);
 }
 

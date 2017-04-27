@@ -11,13 +11,9 @@ header {
 }
 
 footer {
-  background-color: var(--color-accent);
+  background-color: var(--color-secondary);
 }
 
 .footer {
   color: #fff;
-}
-
-.online {
-  float: right;
 }

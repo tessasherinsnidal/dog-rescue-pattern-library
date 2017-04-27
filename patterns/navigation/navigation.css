@@ -21,7 +21,10 @@
 
 .current {
   opacity: .65;
-  color: var(--color-primary)
+  color: var(--color-primary);
+  text-decoration: underline;
+  pointer-events: none;
+  cursor: default;
 }
 
 .mainnav {

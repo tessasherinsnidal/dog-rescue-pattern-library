@@ -10,20 +10,31 @@
   <link href="../../common/theme.css" rel="stylesheet">
   <link href="../buttons/buttons.css" rel="stylesheet">
   <link href="header&footer.css" rel="stylesheet">
+  <link href="../navigation/navigation.css" rel="stylesheet">
 </head>
 <body>
 
-  <header class="island ">
-
-    <h1 class="gutter pad-t">Birch Haven Rescue and Rehabilitation Services</h1>
-
-    <ul class="nav grid">
-      <li class="inline-block island push-0 unit [s-1-2 m-1-4 l-1-4]"><a href="#">Home</a></li>
-      <li class="inline-block island push-0 unit [s-1-2 m-1-4 l-1-4]"><a href="#">Adopt Us</a></li>
-      <li class="inline-block island push-0 unit [s-1-2 m-1-4 l-1-4]"><a href="#">Help Us</a></li>
-      <li class="inline-block island push-0 unit [s-1-2 m-1-4 l-1-4]"><a href="#">Contact Us</a></li>
-    </ul>
-
+  <header role="banner">
+    <svg><use xlink:href="../../images/icons.svg#wordmark" /></svg>
+    <div class="nav-container absolute w-1 zindex-2">
+      <div class="logo-wrapper-xs unit-s-hidden text-center">
+      </div>
+      <div class="wrapper">
+        <input class="mainnav-check absolute" type="checkbox" id="mainnav-check">
+        <label class="mainnav-label absolute pin-tl" for="mainnav-check">
+          <span class="mainnav-icon mainnav-icon-top block absolute"></span>
+          <span class="mainnav-icon mainnav-icon-bottom block absolute"></span>
+        </label>
+        <nav role="navigation" class="mainnav" id="mainnav">
+          <ul class="mainnav-link-group grid grid-middle list-group milli gutter-2 pad-t-1-2 pad-b">
+            <li class="unit [ xs-1 s-1 m-1-4 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="index.html">Home</a></li>
+            <li class="unit [ xs-1 s-1 m-1-4 ] mainnav-link-border"><a class="current mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Adopt Us</a></li>
+            <li class="unit [ xs-1 s-1 m-1-4 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Help Us</a></li>
+            <li class="unit [ xs-1 s-1 m-1-4 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 </body>
 </html>

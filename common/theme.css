@@ -2,9 +2,6 @@
   --color-primary: #333333;
   --color-secondary: #f59799;
   --color-accent: #8aaec0;
-  --color-background: #fdfdfd;
-  --color-neutral: #333;
-  --color-banner: #fff;
   --btn-border: #fff;
 
   --font-primary: "Roboto", sans-serif;
@@ -67,4 +64,8 @@ p {
 
 .white {
   color: #fff;
+}
+
+mark {
+  background-color: var(--color-secondary);
 }

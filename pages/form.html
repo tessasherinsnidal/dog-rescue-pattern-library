@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Form - Birch Haven</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../common/modules.css" rel="stylesheet">
+  <link href="../common/grid.css" rel="stylesheet">
+  <link href="../common/type.css" rel="stylesheet">
+  <link href="../common/theme.css" rel="stylesheet">
+  <link href="../patterns/banner/banner.css" rel="stylesheet">
+  <link href="../patterns/buttons/buttons.css" rel="stylesheet">
+  <link href="../patterns/cards/cards.css" rel="stylesheet">
+  <link href="../patterns/header-&-footer/header&footer.css" rel="stylesheet">
+  <link href="../patterns/forms/form.css" rel="stylesheet">
+  <link href="../patterns/navigation/navigation.css" rel="stylesheet">
+  <link href="../patterns/sections/sections.css" rel="stylesheet">
+</head>
+<body>
+
+  <header role="banner">
+    <svg><use xlink:href="../images/icons.svg#wordmark" /></svg>
+    <div class="nav-container absolute w-1 zindex-2">
+      <div class="logo-wrapper-xs unit-s-hidden text-center">
+      </div>
+      <div class="wrapper">
+        <input class="mainnav-check absolute" type="checkbox" id="mainnav-check">
+        <label class="mainnav-label absolute pin-tl" for="mainnav-check">
+          <span class="mainnav-icon mainnav-icon-top block absolute"></span>
+          <span class="mainnav-icon mainnav-icon-bottom block absolute"></span>
+        </label>
+        <nav role="navigation" class="mainnav" id="mainnav">
+          <ul class="mainnav-link-group grid grid-middle list-group milli gutter-2 pad-t-1-2 pad-b">
+            <li class="unit [ xs-1 s-1 m-1-4 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="index.html">Home</a></li>
+            <li class="unit [ xs-1 s-1 m-1-4 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="adopt.html">Adopt Us</a></li>
+            <li class="unit [ xs-1 s-1 m-1-4 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Help Us</a></li>
+            <li class="unit [ xs-1 s-1 m-1-4 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="subnav-container relative">
+      <div class="subnav-wrapper grid grid-middle wrapper relative">
+        <h1 class="subnav-header unit [ xs-1 s-1-2 ] gutter yotta push-1-2">Application</a></h1>
+        <div class="unit xs-1 s-1-2 subnav-link-wrapper">
+          <input id="subnav-check" type="checkbox" class="subnav-check absolute">
+          <label for="subnav-check" class="subnav-label absolute pin-tr">
+            <span class="ir block giga gutter pad-t-1-2 pad-b-1-2">Open Menu</span>
+            <strong class="absolute pin-c h-1 w-1">
+              <span class="subnav-icon subnav-icon-left block absolute"></span>
+              <span class="subnav-icon subnav-icon-right block absolute"></span>
+            </strong>
+          </label>
+          <nav role="navigation" class="subnav" id="subnav">
+            <ul class="subnav-link-group list-group push-0 milli gutter-2 pad-t-1-2 pad-b">
+              <li class="subnav-link-style"><a class="current subnav-link block pad-t-1-2 pad-b-1-2" href="form.html">Application</a></li>
+              <li class="subnav-link-style"><a class="subnav-link block pad-t-1-2 pad-b-1-2" href="#">Donation</a></li>
+              <li><a class="subnav-link block pad-t-1-2 pad-b-1-2" href="#faq">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <h2 class="gutter wrapper pad-t">Please fill me out</h2>
+
+      <div class="">
+        <form class="max-length island" method="post" novalidate>
+          <div class="unit [ xs-1 ] error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+            <h3 class="push-0">
+              <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+              <span class="icon-label error-title">There are items that require your attention</span>
+            </h3>
+          </div>
+
+          <div class="push">
+            <label for="name">Your Email</label>
+            <input id="name" required aria-describedby="name-error">
+            <p class="error-message milli island-1-4 push-0" id="name-error">
+              <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+              <span class="icon-label">*Please provide a proper Email</span>
+            </p>
+          </div>
+
+          <div class="push">
+            <label for="name">How did you hear about Birch Haven Rescue and Rehabilitation</label>
+            <select id="option" name="option">
+              <option>Choose an option</option>
+              <option>Online</option>
+              <option>A Friend</option>
+              <option>Other...</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="name-error">
+              <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please pick an option</span>
+            </p>
+          </div>
+
+          <div class="push">
+            <label for="name">You are currently looking for a...</label>
+            <select id="option" name="option">
+              <option>Choose an option</option>
+              <option>Puppy</option>
+              <option>Adult</option>
+              <option>Senior</option>
+              <option>Any</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="name-error">
+              <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please pick an option</span>
+            </p>
+          </div>
+
+          <div class="push">
+            <label for="name">What pets do you own?</label>
+            <select id="option" name="option">
+              <option>Choose an option</option>
+              <option>Dog</option>
+              <option>Cat</option>
+              <option>Other</option>
+              <option>None</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="name-error">
+              <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please pick an option</span>
+            </p>
+          </div>
+
+          <div class="push">
+            <label for="name">Please provide a small introduction of yourself</label>
+            <textarea id="name" required aria-describedby="name-error"></textarea>
+            <p class="error-message milli island-1-4 push-0" id="name-error">
+              <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+              <span class="icon-label">*Please fill out</span>
+            </p>
+          </div>
+
+          <div class="push pad-t-1-2">
+            <input class="checkbox-agree" type="checkbox" id="agree" required aria-describedby="agree-error">
+            <label for="agree">I agree to the terms and conditions listed above</label>
+            <p class="error-message milli island-1-4 push-0" id="agree-error">
+              <i class="icon i-16"><svg><use xlink:href="images/icon.svg#error" /></svg></i>
+              <span class="icon-label">You must agree to the terms and conditions.</span>
+            </p>
+          </div>
+
+          <div class="pad-t-1-2">
+            <button class="btn" type="submit">Submit!</button>
+          </div>
+        </form>
+
+        <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+
+    </div>
+
+  </main>
+  <footer class="gutter pad-t pad-b footer">
+    <div class="grid">
+
+    <ul class="unit [xs-1 m-1-2 ] footer grid push">
+      <li class="micro inline-block island-1-2 unit [s-1 m-1 l-1]"><a class="footer" href="#">Home</a></li>
+      <li class="micro inline-block island-1-2 unit [s-1 m-1 l-1]"><a class="footer" href="#">Adopt Us</a></li>
+      <li class="micro inline-block island-1-2 unit [s-1 m-1 l-1]"><a class="footer" href="#">Help Us</a></li>
+      <li class="micro inline-block island-1-2 unit [s-1 m-1 l-1]"><a class="footer" href="#">Contact Us</a></li>
+    </ul>
+
+    <div class="unit [xs-1 m-1-2 ] micro island-1-2 push-0">
+      <p><b>Online Community</b></p>
+      <p>Twitter</p>
+      <p>Facebook</p>
+      <p>YouTube</p>
+    </div>
+
+  </div>
+
+    <p class="micro island-1-2 push-0">Copyright 2015 Birch Haven Rescue & Rehabilitation Services.<br>All rights reserved.</p>
+
+  </footer>
+</body>
+</html>

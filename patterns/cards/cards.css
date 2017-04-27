@@ -1,7 +1,3 @@
-.card-basic {
-  background-image: linear-gradient(to top, rgba(205, 231, 206, .8), rgba(28, 14, 0, 0)), url("http://placehold.it/250x250");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: top left;
-  padding-top: 20%;
+.card:hover {
+  border: 0px solid var(--color-primary);
 }
